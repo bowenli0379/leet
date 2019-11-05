@@ -1,7 +1,7 @@
 package Array;
 
-public class LIS300 {
-    public int lengthOfLIS(int [] nums){
+public class LIS_300 {
+    public static int lengthOfLIS(int [] nums){
         int[] maxLen = new int[nums.length];
         int res = 0;
         for (int i = 0; i < nums.length; i++){
@@ -13,5 +13,9 @@ public class LIS300 {
             res = Math.max(res, maxLen[i]+1);
         }
         return res;
+    }
+    public static void main(String[] args){
+        int [] nums = {10,9,2,5,3,7,101,18};
+        System.out.println(lengthOfLIS(nums));
     }
 }
