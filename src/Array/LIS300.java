@@ -10,7 +10,7 @@ public class LIS300 {
                     maxLen[i] = Math.max(maxLen[j]+1, maxLen[i]);
                 }
             }
-            res = Math.max(res, maxLen[i]);
+            res = Math.max(res, maxLen[i]+1);
         }
         return res;
     }
