@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class RotateArray_189 {
     public static int[] rotate(int[] nums, int k){
-        k = (nums.length + (k % nums.length)) % nums.length;
+        k = k % nums.length; //k也可能大于nums的长度
         reverse(nums, 0, nums.length-k-1);
         reverse(nums, nums.length-k,nums.length-1);
         reverse(nums, 0, nums.length-1);

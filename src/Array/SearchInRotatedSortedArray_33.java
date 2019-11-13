@@ -9,7 +9,7 @@ public class SearchInRotatedSortedArray_33 {
             mid = (left + right) / 2;
             if (nums[mid] == target)
                 return mid;
-            if (nums[left] <= nums[mid]){
+            if (nums[left] <= nums[mid]){ //也可以比较mid和right的值
                 if (nums[left] <= target && target < nums[mid])
                     right = mid-1;
                 else
