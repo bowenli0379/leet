@@ -12,8 +12,8 @@ public class InvertBinaryTree_226 {
         TreeNode temp = node.left;
         node.left = node.right;
         node.right = temp;
-       exchange(node.left);
-       exchange(node.right);
+        exchange(node.left);
+        exchange(node.right);
        return node;
     }
 }
