@@ -16,5 +16,6 @@ public class PaintHouse_256 {
     public static void main(String[] args){
         int[][] costs = {{14,2,11},{11,14,5},{14,3,10}};
         System.out.println(minCost(costs));
+        //
     }
 }
